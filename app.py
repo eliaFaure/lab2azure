@@ -29,9 +29,9 @@ def numerical_integration(lower, upper, N):
 # Main code
 @app.route('/integrate', methods=['GET'])
 def integrate():
-    lower = float(request.args.get('lower', 0.0))  
-    upper = float(request.args.get('upper', 3.14))  
-    N = int(request.args.get('N', 1000))  
+    lower = 0
+    upper = 3.14  
+    N =1000  
     result = numerical_integration(lower, upper, N)
     return jsonify({"lower": lower, "upper": upper, "N": N, "result": result})
 
