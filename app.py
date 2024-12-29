@@ -27,7 +27,7 @@ def numerical_integration(lower, upper, N):
     return total_area
 
 # Main code
-@app.route('/integrate', methods=['GET'])
+@app.route('/)
 def integrate():
     lower = 0
     upper = 3.14  
